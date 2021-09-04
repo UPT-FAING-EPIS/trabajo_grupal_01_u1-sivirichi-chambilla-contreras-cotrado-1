@@ -1,0 +1,190 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {./Imagenes/} }
+\usepackage{multicol}
+\usepackage[spanish, english]{babel}
+\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+
+\providecommand{\keywords}[1]{
+  \small	
+  \textbf{\textit{\quad \quad Keywords: }} #1}
+
+\providecommand{\pclave}[1]{
+  \small	
+  \textbf{\textit{\quad \quad Palabras Clave: }} #1}
+
+% Idiomas: 
+% \selectlanguage{english}, {spanish}
+
+\begin{document}
+\title{Trabajo Encargado: Comparativa entre Datawarehouse y Datalake}
+\begin{titlepage}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=5cm]{logo.png}
+\end{center}
+\end{figure}
+\vspace*{-0.25in}
+\begin{center}
+\large{UNIVERSIDAD PRIVADA DE TACNA}\\
+\vspace*{-0.025in}
+INGENIERÍA DE SISTEMAS  \\
+
+\vspace*{0.5in}
+\begin{large}
+TITULO:\\
+\end{large}
+
+\vspace*{0.1in}
+\begin{Large}
+\textbf{Comparativa entre Datawarehouse y Datalake} \\
+\end{Large}
+
+\vspace*{0.3in} 
+\begin{Large}
+\textbf{CURSO:} \\
+\end{Large}
+
+\vspace*{0.1in}
+\begin{large}
+INTELIGENCIA DE NEGOCIOS\\
+\end{large}
+
+\vspace*{0.3in}
+\begin{Large}
+\textbf{DOCENTE:} \\
+\end{Large}
+
+\vspace*{0.1in}
+\begin{large}
+ Ing. Patrick Cuadros Quiroga\\
+\end{large}
+
+\vspace*{0.2in}
+\vspace*{0.1in}
+\begin{large}
+
+Integrantes: \\
+\begin{flushleft}
+Cotrado Marino, Ana Luz\hfill(2018060907)\\
+Sivirichi Falcón, Ricardo Alonso\hfill(2018060905) \\
+Chambilla Maquera, Araceli Noemi\hfill(2018060897)\\
+Contreras Murguia, Jose Manuel\hfill (2016056346)\\
+
+\end{flushleft}
+\end{large}
+
+\vspace*{0.1in}
+\begin{large}
+Tacna - Perú\\
+2021
+\end{large}
+\end{center}
+\end{titlepage}
+
+
+\selectlanguage{spanish}
+\begin{abstract}
+\quad 
+Cada día se generan enormes cantidades de datos a partir de tecnologías digitales y sistemas de información. Por lo tanto, procesar estos datos masivos requiere una arquitectura específica y un buen conocimiento sobre cómo manejar los datos. El sistema de gestión de bases de datos tradicional ya no se puede utilizar para este tipo de datos, ya que fueron diseñados originalmente para datos estructurados y limitados. Este articulo describe las características esenciales de los datawarehouse y datalakes. También compara y contrasta los dos sistemas y concluye que los dos no son tecnologías competitivas pero si complementarias. Juntos pueden servir de manera eficaz y competente a las necesidades de gestión de datos de una organización.
+
+\end{abstract}
+\pclave{Datawarehouse, Datalake, Datos}
+
+\selectlanguage{english}
+\begin{abstract}
+\quad
+Huge amounts of data are generated every day from digital technologies and information systems. Therefore, processing this massive data requires a specific architecture and a good knowledge of how to handle the data. The traditional database management system can no longer be used for this type of data, as they were originally designed for structured and limited data. This article describes the essential characteristics of data warehouses and datalakes. It also compares and contrasts the two systems and concludes that the two are not competitive but complementary technologies. Together they can efficiently and competently serve the data management needs of an organization.
+
+
+
+
+\end{abstract} 
+\keywords{Datawarehouse, Datalake, Data} 
+
+\selectlanguage{spanish}
+\begin{multicols}{2}
+
+\section{Introducción} 
+A menudo se confunden estos dos tipos de almacenamiento de dato,pero son mucho mas diferente de lo puede parecer a simple vista .De hecho lo único que tienen en común es que contiene grandes cantidades de datos.
+
+Tal y como adelantaba Michael E. Porter en 1998, las características y el contexto de la sociedad de la información han generado la necesidad de optar por rápidos, mejores y eficientes métodos que puedan extraer y transformar los datos de una empresa y a su vez distribuirlos a lo largo de su cadena de valor. 
+
+La inteligencia de negocios puede responder ante la necesidad planteada por Porter. Se podría deducir, en una primera instancia, que la inteligencia de negocios es una evolución de los sistemas de soporte de decisiones.
+
+\section{Desarrollo}
+
+\subsection{Datawarehouse}
+
+Un datawarehouse es una base de datos analítica de enormes proporciones que adquiere sus datos a partir de una variedad de sistemas de producción (Inmon \& Linstedt, 2014). Está diseñado para admitir consultas, informes y análisis de datos transaccionales. 
+
+Con el tiempo, el datawarehouse se ha convertido en una herramienta fundamental en el sistema general de apoyo a la toma de decisiones y ha ayudado a abordar requisitos de la comunidad de usuarios empresariales (Kimball, Reeves, Ross \& Thornthwaite, 2005).
+
+Los datos almacenados en el almacén de datos generalmente constan de cuatro características distintas, tales como estar orientado al sujeto, integrado, variable en el tiempo y no volátil (Khan, 2003). Los datos en un datawarehouse están organizados por temas como cliente, proveedor y productos. Los datos están unificados
+de numerosos sistemas fuente, y muestra la unificación a través de atributos de datos armonizados, convenciones de nomenclatura y definición.Los datos permanecen constantes y cualquier dato nuevo se agregan sistemáticamente.
+
+Las organizaciones se han beneficiado enormemente de la implementación exitosa del datawarehouse, ayudando a los comerciantes brindando los medios para obtener información sobre las tendencias comerciales y oportunidades futuras. 
+
+\subsection{Datalake}
+
+En los últimos años, el término "datalake" se utiliza con frecuencia en el almacenamiento y la gestión de
+Big Data. Un datalake es un repositorio descentralizado que facilita el almacenamiento de datos estructurados y datos no estructurados con alta escalabilidad y flexibilidad (Tomcy \& Misra, 2017). Un datalake típicamente ingiere todos los datos en su estado original sin realizar ninguna limpieza, estandarización o remodelación. La estructura de los datos o el esquema no se define cuando se almacenan los datos.
+
+Las tendencias y conocimientos previamente desconocidos se descubren a partir de los datos almacenados en datalake por ejecutar programas analíticos como consultas SQL, análisis de big data y aprendizaje automático (Tomcy Y Misra, 2017). A continuación tenemos las capacidades clave de datalakes:
+
+1) Almacenamiento de datos: los datos se recopilan de varias fuentes y se transfieren en su forma original, ahorrando así tiempo en la definición de estructuras de datos, esquemas y transformaciones (Nogueira,Romdhane y Darmont, 2018). 
+Además, el escalado flexible de datalake proporciona una forma asequible de almacenar una gran cantidad de datos.      
+
+2) Catalogación y almacenamiento seguro de datos: Datalake facilita el almacenamiento de datos relacionales y datos no relacionales. Mediante la catalogación, el rastreo y la indexación de datos, la clasificación de datos se sin dolor. Además, los datos están bien protegidos para garantizar que los activos de datos estén bien protegidos. (Russom, 2016).
+
+3) Soporte de análisis y aprendizaje automático: Datalake permite a los desarrolladores de datos, científicos de datos y
+analistas de negocios acceder a los datos con las herramientas analíticas de su elección. También permite correr análisis sin ningún movimiento de datos a un sistema de análisis diferente. Los datalakes son aptos para realizar aprendizaje automático donde se crean modelos para predecir los resultados probables y prescribir numerosas acciones para lograr el resultado deseado (Nogueira, Romdhane \& Darmont, 2018)
+
+
+\subsection{Comparativa}
+Los data lake y los data warehouse se utilizan de forma generalizada para el almacenaje de big data, pero, aunque ambos son almacenes de datos, estos no son términos intercambiables. Un data lake o "lago de datos" es un gran conjunto de datos en bruto, que todavía no tiene una finalidad definida. En cambio, un data warehouse o "almacén de datos" es un depósito de datos que ya están estructurados y filtrados y han sido procesados para un propósito concreto.
+
+Es importante hacer la distinción ya que data lake y los data warehouse atienden a diferentes propósitos,por lo que requieren un enfoque diferente para ser optimizado adecuadamente.
+
+Por lo tanto, este tipo de herramientas son fundamentales para la nueva sociedad de la información y el conocimiento.
+
+\section{Conclusion}
+Un data lake o "lago de datos" es un gran conjunto de datos en bruto, que todavía no tiene una finalidad definida. En cambio, un data warehouse o "almacén de datos" es un depósito de datos que ya están estructurados y filtrados y han sido procesados para un propósito concreto.
+
+Las diferentes arquitecturas descritas comparten el criterio de estanques
+especializados, ya sea para una categoría de datos o una funcionalidad. Esto indica
+que, aunque en principio todos los datos de cualquier tipo caen en esta laguna, cada
+categoría tiene su forma particular de ser procesada y transformada en información
+de valor para la organización. 
+Al hablar de herramientas utilizadas en el entorno de los lagos de datos, se hace
+referencia a las metodologías que pueden ser utilizadas para cada uno de los
+procesos que se llevan a cabo allí, tales como la carga de datos, la clasificación de
+estos, la transformación requerida para su tratamiento, el análisis, y hasta la manera
+de mostrar los resultados a los interesados. De estas herramientas hay múltiples
+opciones que se utilizarán dependiendo del contexto de los datos y los requisitos de
+los interesados del proceso. 
+
+
+\section{Recomendaciones}
+Con todo, si te estás planteando construir una arquitectura de gestión de data, debes saber que hay muchas otras piezas tecnológicas que pueden ayudarte, más allá del Data WareHouse o del Data Lake. Saber qué datos necesitas realmente almacenar para conseguir desarrollar estrategias de Business Intelligence efectivas te permitirá reducir costes y sacarle más valor a tus herramientas de análisis.
+
+
+
+\end{multicols}
+
+\begin{thebibliography}{XXX0000}
+
+    \bibitem{EME2020} El Aissi, M. E. M., Benjelloun, S., Loukili, Y., Lakhrissi, Y., El Boushaki, A., Chougrad, H., \& Ali, S. E. B. (2020). Data Lake Versus Data Warehouse Architecture: A Comparative Study. In WITS 2020 (pp. 201-210). Springer, Singapore.
+    
+    \bibitem{KPP2018} Khine, P. P., \& Wang, Z. S. (2018). Data lake: a new ideology in big data era. In ITM web of conferences (Vol. 17, p. 03025). EDP Sciences.
+    
+    \bibitem{FRE2005}Massimo Giglotii.(2019).Actualizacion e innovacion sobre las informaciones de la base de datos.
+    \bibitem{FREE2020} Chrissy Kedondeis.(2020).Comparacion entre los almacenamientis de dato de Datawahouse y de Datalake.
+    \bibitem{FREE2020}  Carlos Pesquera.(2020).Diferencias entre Data Warehouse y Data Lake.
+    \bibitem{FREE2017} Juan Manuel Soto.(2017).El enfoque tradicional del DataWarehouse/Business Intelligence ha hecho un gran trabajo para simplificar el acceso a los datos.
+
+
+\end{thebibliography}
+    
+\end{document}
